@@ -19,8 +19,8 @@ function flip(el) {
 }
 
 $(document).ready(function(){
-// $("tr").slideUp();
- $("tr").removeClass("hidde")
+ $("tr").slideUp();
+
 
 })
 var notAdded1=true,notAdded2=true, completed=false,issue1=false,issue2=false
@@ -181,6 +181,8 @@ require([
       evt.preventDefault();
     }
     completed=true
+
+
 
 //    setTimeout(function(){
 //       view.graphics.add(pointGraphic);
@@ -353,6 +355,8 @@ require([
     $.get("/person1", function(data, status){
         if (JSON.parse(data).present==true && notAdded1 && completed){
           view.graphics.add(pointGraphic);
+
+            $(".row1").removeClass("hidde");
           notAdded1=false
         }
 
@@ -360,10 +364,18 @@ require([
     $.get("/person2", function(data, status){
          if (JSON.parse(data).present==true && notAdded2 && completed){
             view.graphics.add(pointGraphic2);
+
+              $(".row2").removeClass("hidde");
             notAdded2=false
         }
 
     })
+    if(!(notAdded1 && notAdded1)){
+          $("#video").removeClass("hidde")
+          $("#viewDiv").addClass("map-adjust")
+    }
+
+
 },1000)
 
 });
@@ -459,14 +471,16 @@ setInterval(function(){
 
     })
 
-
-    $(".heartrate1").html("Heart Rate: "+  (((Math.random() * 80)).toFixed(2) + 60)  +"bpm")
-     $(".temp1").html("Temp: "+   (((Math.random() * 500)).toFixed(2) + 100) +" F")
+    temp = (100+((Math.random() * 500)).toFixed(2) )
+    heart= (60+((Math.random() * 80)).toFixed(2) )
+    $(".heartrate1").html("Heart Rate: "+ heart  +"bpm")
+     $(".temp1").html("Temp: "+  temp +" F")
 //     $(".pressure1").html("Smoke Level : "+  5 +"")
      $(".air1").html("Air Supply: "+   (1-.01*x).toFixed(2) +"hour")
-
-     $(".heartrate2").html("Heart Rate: "+  (((Math.random() * 80)).toFixed(2) + 60)  +"bpm")
-     $(".temp2").html("Temp: "+  ( ((Math.random() * 500)).toFixed(2) + 100 )+" F")
+  temp = (100+((Math.random() * 500)).toFixed(2) )
+    heart= (60+((Math.random() * 80)).toFixed(2) )
+     $(".heartrate2").html("Heart Rate: "+ heart  +"bpm")
+     $(".temp2").html("Temp: "+  temp +" F")
 //
 
    x=x+1
