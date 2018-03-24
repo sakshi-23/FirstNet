@@ -1,0 +1,229 @@
+nav{
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+
+
+}
+
+.navbar-absolute{
+ padding:0!important
+}
+
+#emailsSubscriptionChart .ct-chart-bar .ct-label.ct-horizontal.ct-end{
+    font-size:10px;
+}
+
+ #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 500px;
+      width: 100%;
+    }
+    #titleDiv {
+      position: absolute;
+      width: 100%;
+      padding: 15px;
+      line-height: 1;
+      z-index: 1;
+      background: #fff;
+      font-family: "Avenir Next W00";
+      font-size: 20px;
+    }
+
+.loader {
+    position:   fixed;
+    z-index:    10000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+        url('../images/loading.gif')
+        50% 50%
+        no-repeat;
+}
+
+.switch {
+  /* position: absolute; */
+  /* display: inline-block; */
+  width: 38px;
+  height: 20px;
+  /* margin: 10px; */
+  top: 8px;
+  position: relative;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #14b7cb;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 16px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+
+.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut{
+
+    stroke-dasharray: 5;
+}
+
+.title span{
+   transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+.small.predictions{
+    font-size: 10px;
+
+        transition: all 0.33s linear;
+}
+
+.visuallyhidden{
+
+
+        opacity: 0;
+
+}
+
+.line {
+        fill: none;
+
+        stroke-width: 1.5px;
+    }
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+
+
+
+.domain{
+stroke-width: 1px;
+    fill: none;
+
+}
+
+text,.domain,.line{
+ stroke: #2c3e50;
+}
+
+rect{
+fill: rgb(119, 119, 119);
+    fill-opacity: 0.3;
+
+    width: 352.085;
+    height: 40;
+
+}
+
+
+
+
+.small, .small i{
+    font-size: 16px;
+}
+
+.price{
+position: relative;
+    top: -20px;
+    margin-bottom:0
+}
+
+
+.news{
+    height: 420px;
+    overflow: scroll;
+    font-size: 10px;
+
+}
+
+.ui-loader{
+    display:none;
+}
+
+.news-container{
+    margin-top: -70px;
+}
+
+.icon{color: #FF9800;margin: -13px;position: absolute;}
+
+
+.card-holder .card-header{
+    color: black;
+    background: white;
+    border: 2px solid #f1c40f;
+}
+
+th.active{
+    color:black;
+    font-weight:bold;
+}
+
+th{
+    cursor:pointer;
+}
+
+.navbar-brand>img {
+    display: block;
+    width: 151px;
+    position: relative;
+    top: -21px;
+}
+.navbar a.navbar-brand{
+    color:#888888
+}
+
+.navbar a.navbar-brand.active{
+        color: #ffffff;
+}
+
+.material-icons{
+    cursor:pointer;
+}
+
+.d3_timeseries.axis{font:10px sans-serif}.d3_timeseries.axis path,.d3_timeseries.axis line{fill:none;stroke:#000;stroke-width:1;shape-rendering:crispEdges}.d3_timeseries.mousevline{fill:none;stroke:#666;stroke-dasharray:3,6;stroke-width:1}.d3_timeseries.mousevline-text{font:10px sans-serif}.d3_timeseries.tooltip{position:absolute;text-align:left;font:10px sans-serif;padding:2px;background:white;border:solid #888 1px;border-radius:4px}.d3_timeseries.tooltip h4{margin-top:2px;margin-bottom:2px}.d3_timeseries.axis text{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;cursor:default}
