@@ -15,7 +15,7 @@ nav{
  #viewDiv {
       padding: 0;
       margin: 0;
-      height: 500px;
+      height: 670px;
       width: 100%;
     }
     #titleDiv {
@@ -174,12 +174,30 @@ position: relative;
     margin-bottom:0
 }
 
+.video-js {
+    width: 150px;
+    height: 265px;
+    margin-left: 61px;
+    margin-top: -57px;
+    transform: rotate(-90deg);
+}
 
-.news{
-    height: 420px;
+.video-container{
+    margin-top: -60px;
+    margin-left: 58px;
+}
+
+
+.card .card-content.news{
+
     overflow: scroll;
     font-size: 10px;
+    padding:0
 
+}
+
+.inner .col-md-6{
+padding:0
 }
 
 .ui-loader{
@@ -225,5 +243,30 @@ th{
 .material-icons{
     cursor:pointer;
 }
+
+.caption{
+    margin-top: -59px;
+}
+
+
+.highlight{
+        border: 3px solid red;
+
+}
+
+.caption .right,.caption2 .right{
+    right: 43px;
+    line-height: 7px;
+    font-size: 12px;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+}
+
+.caption2{
+    margin-top: -25px;
+}
+
+
 
 .d3_timeseries.axis{font:10px sans-serif}.d3_timeseries.axis path,.d3_timeseries.axis line{fill:none;stroke:#000;stroke-width:1;shape-rendering:crispEdges}.d3_timeseries.mousevline{fill:none;stroke:#666;stroke-dasharray:3,6;stroke-width:1}.d3_timeseries.mousevline-text{font:10px sans-serif}.d3_timeseries.tooltip{position:absolute;text-align:left;font:10px sans-serif;padding:2px;background:white;border:solid #888 1px;border-radius:4px}.d3_timeseries.tooltip h4{margin-top:2px;margin-bottom:2px}.d3_timeseries.axis text{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;cursor:default}

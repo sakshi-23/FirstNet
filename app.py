@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import os
 from os import environ
-from twitter import *
 import json
 import pymongo
 from pymongo import MongoClient
@@ -38,7 +37,26 @@ def dashboard():
     return render_template('dashboard.html')
 
 
+@app.route('/issue1')
+def issue1():
+    import os.path
+    return json.dumps({"present":os.path.exists('alert.txt')})
 
+@app.route('/issue2')
+def issue2():
+    import os.path
+    return json.dumps({"present":os.path.exists('alert2.txt')})
+
+
+@app.route('/person1')
+def location1():
+    import os.path
+    return json.dumps({"present":os.path.exists('alert.txt')})
+
+@app.route('/person2')
+def location2():
+    import os.path
+    return json.dumps({"present":os.path.exists('alert2.txt')})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port, debug=True)
